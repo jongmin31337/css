@@ -9,27 +9,29 @@
     <style>
         .flex-container {
             display: flex;
+            height: 100VH;
+            align-items: center;
         }
 
-        .flex-item {
-            flex-basis: 200px;
+        .flex-item:nth-child(2) {
+            align-self: stretch;
+            order: 5;
         }
 
-        .flex-item:nth-child(1) {
-            flex-shrink: 0;
-            width: 500px;
-            flex-grow: 1;
+        .flex-item:nth-child(5) {
+            align-self: self-end;
+            order: 4;
         }
-
-
 
     </style>
 </head>
 <body>
     <div class="flex-container">
-		<div class="flex-item">AA</div>
+		<div class="flex-item">AAAAAAAAAAAAAAA</div>
 		<div class="flex-item">BBB</div>
-		<div class="flex-item">CCCCCCCCCCCCCCCCC</div>
+		<div class="flex-item">CCCCCCCC</div>
+        <div class="flex-item">DDDD</div>
+		<div class="flex-item">EEEE</div>
 	</div>
 </body>
 </html>

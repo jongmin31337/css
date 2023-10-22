@@ -11,16 +11,16 @@
             display: flex;
         }
 
-        .flex-item {
-            width: 100px;
-        }
+        .flex-item:nth-child(1) { flex-grow: 1; }
+        .flex-item:nth-child(2) { flex-grow: 2; }
+        .flex-item:nth-child(3) { flex-grow: 1; }
     </style>
 </head>
 <body>
     <div class="flex-container">
 		<div class="flex-item">AAAAAAA</div>
-		<div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
-		<div class="flex-item">CCCCCCCCCCCCCCCCC</div>
+		<div class="flex-item">BBB</div>
+		<div class="flex-item">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
 	</div>
 </body>
 </html>

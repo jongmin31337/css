@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS Flex</title>
+	<link rel="stylesheet" href="default.css">
+    <style>
+        /**
+            고정폭 , 가변폭, 고정폭
+        */
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-item {
+        }
+
+        .flex-item:nth-child(1) {
+            flex: 0 0 auto;
+            width: 150px;
+        }
+
+        .flex-item:nth-child(2) {
+            flex-grow: 1;
+        }
+
+        .flex-item:nth-child(3) {
+            flex: 0 0 auto;
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+		<div class="flex-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur cumque laboriosam beatae vitae! Aliquid saepe sit impedit eius molestias</div>
+		<div class="flex-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo recusandae expedita inventore. Dicta in ex fugit, laborum soluta omnis placeat, dolorem, suscipit alias recusandae odit architecto error animi quis modi.</div>
+		<div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+    </div>
+</body>
+</html>

@@ -9,18 +9,24 @@
     <style>
         .flex-container {
             display: flex;
+            width: 600px;
+            /* margin: 0 auto; */
         }
 
         .flex-item {
-            width: 100px;
+            width: 150PX;
+        }
+
+        .flex-item:last-child {
+            margin-left: auto;
         }
     </style>
 </head>
 <body>
     <div class="flex-container">
-		<div class="flex-item">AAAAAAA</div>
-		<div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
-		<div class="flex-item">CCCCCCCCCCCCCCCCC</div>
-	</div>
+		<div class="flex-item">A</div>
+		<div class="flex-item">B</div>
+		<div class="flex-item">C</div>
+    </div>
 </body>
 </html>
