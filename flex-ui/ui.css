@@ -114,5 +114,44 @@
 
 /* card-list */
 .card-item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+}
+
+.card-image {
+    height: 0;
+    padding-bottom: 60%;
+    background: lightgrey;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-image img {
+    display: none;
+}
+
+.card-desc {
+    flex : 1 1 auto;
+    padding: 1em;
+    background: white;
+}
+
+@media (min-width: 600px) {
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3%;
+    }
+
+    .card-item {
+        width: 47%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-item {
+        width: 30.33333333%;
+    }
 }
